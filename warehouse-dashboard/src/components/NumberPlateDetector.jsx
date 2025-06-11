@@ -19,7 +19,7 @@ const NumberPlateDetector = () => {
       setPlate(newPlate);
 
       // Send POST request to backend
-      axios.post('http://localhost:5000/api/vehicles', {
+      axios.post('https://warehouse-dashboard.onrender.com/api/vehicles', {
         plateNumber: newPlate,
       })
       .then(() => {
