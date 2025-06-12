@@ -33,14 +33,18 @@ const App = () => {
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <div ref={captureRef} className="p-4 space-y-4 bg-gray-100">
+ return (
+  <div ref={captureRef} >
+    <h6 className="font-serif text-2xl mb-4 font-semibold m-8">Warehouse Dashboard</h6>
+    <div className="p-4 bg-gray-100 grid grid-cols-2 gap-4 w-screen">
       <VideoFeed />
+      <AnalyticsCharts />
       <GoodsCounter />
       <NumberPlateDetector />
-      <AnalyticsCharts />
     </div>
-  );
+  </div>
+);
+
 };
 
 export default App;
