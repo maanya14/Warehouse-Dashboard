@@ -16,7 +16,7 @@ const GoodsCounter = () => {
       setCount(newCount);
 
       // Send POST to backend
-      axios.post('http://localhost:5000/api/goods', {
+      axios.post('https://warehouse-dashboard.onrender.com/api/goods', {
         name: generateRandomGoodName(),
         quantity: quantity,
       })

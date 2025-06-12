@@ -9,7 +9,7 @@ const AnalyticsCharts = () => {
 
   const fetchAnalytics = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/api/analytics');
+      const res = await axios.get('https://warehouse-dashboard.onrender.com/api/analytics');
       const goods = res.data.goodsPerHour || [];
       const vehicles = res.data.vehiclesPerHour || [];
 
