@@ -16,7 +16,7 @@ const App = () => {
         html2canvas(captureRef.current).then(canvas => {
           const imgData = canvas.toDataURL('image/png');
 
-          axios.post('http://localhost:5000/api/snapshots', {
+          axios.post('https://warehouse-dashboard.onrender.com/api/snapshots', {
             imageUrl: imgData,
             note: 'Automated snapshot' // Optional custom note
           })
